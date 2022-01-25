@@ -13,16 +13,16 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import collections
 
-# The following code will mount the drive
-from google.colab import drive
-drive.mount('/content/gdrive')
+# The following code will mount the drive if using Google Colab
+# from google.colab import drive
+# drive.mount('/content/gdrive')
 
 """---
 ## Real-World Graph
 """
 
 # File contains edgelist of a friendship network of users from music streaming service Deezer
-G = nx.read_edgelist(path="/content/gdrive/My Drive/Github/RO_edges.csv", delimiter=',', nodetype=int)
+G = nx.read_edgelist(RO_edges.csv", delimiter=',', nodetype=int)
 num_edges = G.number_of_edges()
 num_nodes = G.number_of_nodes()
 
